@@ -1,0 +1,123 @@
+1. Which of the following are operators, and which are values? 
+
+*        ---> operator
+'hello'  ---> value
+-88.8 -  ---> value
+/        ---> operator
++        ---> operator
+5        ---> value
+
+----------------------------------------------------------------------------
+
+2. Which of the following is a variable, and which is a string?
+spam   ---> variable
+'spam' ---> string
+
+----------------------------------------------------------------------------
+
+3. Name three data types.
+1. int
+2. float
+3. string
+
+----------------------------------------------------------------------------
+
+4. What is an expression made up of? What do all expressions do?
+
+An expression is made up of:
+- Values (numbers, strings, variables)
+- Operators (+, -, *, /, etc.)
+- Variables
+- Function calls
+>> x + 5
+
+All expressions produce a value.
+
+That value can be:
+- Stored in a variable
+- Printed
+- Used in another expression
+>> result = 3 + 2   # expression gives 5
+
+----------------------------------------------------------------------------
+
+5. This chapter introduced assignment statements, like spam = 10. What is 
+the difference between an expression and a statement?
+
+Difference between an expression and a statement:
+
+Expression:
+- Produces a value.
+>> 3 + 2
+
+
+Statement:
+- Performs an action.
+>> spam = 10
+
+Key difference:
+Expression	                      Statement
+- Evaluates to a value	          - Executes an instruction
+- Can be part of a statement	  - Controls program flow or assigns values
+
+----------------------------------------------------------------------------
+
+6. What does the variable bacon contain after the following code runs?
+bacon = 20
+bacon + 1
+
+>> 20 
+
+Why?
+- bacon + 1 is an expression.
+- It evaluates to 21, but the result is not stored anywhere.
+- So bacon is not changed.
+
+----------------------------------------------------------------------------
+
+7. What should the following two expressions evaluate to?
+'spam' + 'spamspam' ---> spamspamspam
+'spam' * 3          ---> spamspamspam
+
+----------------------------------------------------------------------------
+
+8. Why is eggs a valid variable name while 100 is invalid?
+
+eggs is a valid variable name because it follows Python’s naming rules.
+100 is invalid because variable names cannot start with a number.
+
+Python variable name rules:
+- A variable name must:
+- Start with a letter or underscore
+- Contain only letters, numbers, and underscores
+- Not be only numbers
+
+----------------------------------------------------------------------------
+
+9. What three functions can be used to get the integer, floating-point 
+number, or string version of a value?
+
+1. int()
+2. float()
+3. str()
+
+----------------------------------------------------------------------------
+
+10. Why does this expression cause an error? How can you fix it?
+'I have eaten ' + 99 + ' burritos.'
+
+Because Python cannot add (concatenate) a string and an integer.
+- 'I have eaten ' → string
+- 99 → integer
+Python does not allow mixing them with +.
+
+How to fix it:
+- Convert the number to a string:
+'I have eaten ' + str(99) + ' burritos.'
+
+----------------------------------------------------------------------------
+
+Extra credit: Search online for the Python documentation for the len() 
+function. It will be on a web page titled “Built-in Functions.” Skim the 
+list of other functions Python has, look up what the round() function 
+does, and experiment with it in the interactive shell.
