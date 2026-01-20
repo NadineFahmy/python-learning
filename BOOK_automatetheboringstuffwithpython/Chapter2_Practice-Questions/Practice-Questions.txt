@@ -1,0 +1,201 @@
+1. What are the two values of the Boolean data type? How do you 
+write them?
+
+True
+False
+
+----------------------------------------------------------------------
+2. What are the three Boolean operators?
+
+and
+or
+not
+
+----------------------------------------------------------------------
+3. Write out the truth tables of each Boolean operator (that is, every 
+possible combination of Boolean values for the operator and what 
+they evaluate to).
+
+AND (and)
+A       B       A and B
+True    True    True
+True    False   False
+False   True    False
+False   False   False
+
+OR (or)
+A       B       A or B
+True    True    True
+True    False   True
+False   True    True
+False   False   False
+
+NOT (not)
+A       not A
+True    False
+False   True
+
+----------------------------------------------------------------------
+4. What do the following expressions evaluate to?
+
+(5 > 4) and (3 == 5)                  ---> False
+not (5 > 4)                           ---> False
+(5 > 4) or (3 == 5)                   ---> True
+not ((5 > 4) or (3 == 5))             ---> False
+(True and True) and (True == False)   ---> False
+(not False) or (not True)             ---> True
+
+-----------------------------------------------------------------------
+5. What are the six comparison operators?
+
+==   Equal to
+!=   Not equal to
+>    Greater than
+<    Less than
+>=   Greater than or equal to
+<=   Less than or equal to
+
+-----------------------------------------------------------------------
+6. What is the difference between the equal to operator and the assign
+ment operator? 
+
+Assignment operator =
+- Used to store a value in a variable.
+- It does not compare anything.
+>> x = 10
+
+Equal to operator ==
+- Used to compare two values.
+- Returns True or False.
+>> x == 10   # True or False
+
+-----------------------------------------------------------------------
+7. Explain what a condition is and where you would use one.
+
+A condition is an expression that evaluates to either True or False.
+It is used to make decisions in a program.
+
+>> Example of a condition:
+   age > 18
+
+This condition is either:
+- True → if age is greater than 18
+- False → if age is 18 or less
+
+Where do we use conditions?
+Conditions are used in:
+- if statements
+- while loops
+- elif statements
+- logical expressions
+
+>> Example:
+   age = 20
+
+   if age > 18:
+       print("You are an adult")
+
+    # Here, age > 18 is the condition that decides whether the message is printed or not.
+
+
+-----------------------------------------------------------------------
+8. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+    print('eggs')--------------------------------------> 1
+    if spam > 5:
+        print('bacon')-------------------> 2
+    else:
+        print('ham')---------------------> 2
+    print('spam')--------------------------------------> 1
+print('spam')----------------->3
+
+------------------------------------------------------------------------
+9. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is 
+stored in spam, and prints Greetings! if anything else is stored in spam.
+
+spam = int(input("Enter a number: "))
+
+if spam == 1:
+    print("Hello")
+elif spam == 2:
+    print("Howdy")
+else:
+    print("Greetings!")
+
+-------------------------------------------------------------------------
+10. What can you press if your program is stuck in an infinite loop?
+
+Ctrl + C
+
+-------------------------------------------------------------------------
+11. What is the difference between break and continue?
+
+| Keyword    | Effect on loop                        |
+| ---------- | ------------------------------------- |
+|  break     | Exit the loop entirely                |
+|  continue  | Skip current iteration, continue loop |
+
+
+-------------------------------------------------------------------------
+12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) 
+in a for loop?
+
+- range(10)
+Generates numbers from 0 up to 9 (10 is not included)
+Default start = 0, default step = 1
+
+>> for i in range(10):
+       print(i)
+
+Output:
+0 1 2 3 4 5 6 7 8 9
+
+------------------------
+
+- range(0, 10)
+Explicitly sets start = 0 and stop = 10
+Default step = 1
+
+>> for i in range(0, 10):
+       print(i)
+
+Output is exactly the same as range(10).
+
+------------------------
+
+- range(0, 10, 1)
+Explicitly sets start = 0, stop = 10, and step = 1
+Step means how much the number increases each time
+
+>> for i in range(0, 10, 1):
+      print(i)
+
+Output is still the same
+
+-------------------------------------------------------------------------
+13. Write a short program that prints the numbers 1 to 10 using a for loop. 
+Then write an equivalent program that prints the numbers 1 to 10 using 
+a while loop.
+
+for i in range(1, 11):
+    print(i)
+
+---------
+
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+
+-------------------------------------------------------------------------
+14. If you had a function named bacon() inside a module named spam, how 
+would you call it after importing spam?
+
+import spam
+
+spam.bacon()
+
+-------------------------------------------------------------------------
+Extra credit: Look up the round() and abs() functions on the Internet, 
+and find out what they do. Experiment with them in the interactive shell.
