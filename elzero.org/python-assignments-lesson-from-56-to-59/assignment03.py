@@ -1,5 +1,5 @@
 def show_skills(name, *skills):
-    print(f"Hello {name}")
+    print(f"Hello {name} ", end="")
 
     if skills:
         print("Your Skills Are:")
@@ -23,4 +23,5 @@ show_skills("Osama", "HTML", "CSS", "JS", "Python")
 show_skills("Ahmed")
 
 # Output
+
 "Hello Ahmed You Have No Skills To Show"
